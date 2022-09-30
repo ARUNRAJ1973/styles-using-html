@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>All styles</title>
+        <style>
+            *{
+                font-family: cursive;
+                font-weight:100;
+                margin: 0px;
+                accent-color: rgb(255, 0, 0);
+            }
+            body{
+                background-color: lightseagreen;
+                background-image: url(photos/tree.jpg);
+                background-position:top center;
+                background-attachment:fixed;
+                background-repeat: no-repeat;
+                background-size:cover;             
+            }
+            div.order{
+                background:rgb(34, 32, 32) url(photos/cat.jpg) no-repeat center/contain;
+                width:600px;
+                height:fit-content;
+                display: flex;  
+                justify-content: center;
+                align-items: center;
+                margin-left: 350px; 
+                padding: 14px;
+                color: rgb(4, 201, 255);
+                border: 14px solid green;
+            }
+            input{
+                border: 3px solid rgb(24, 174, 89);
+            }
+            #topic{
+                color: rgb(255, 0, 0);
+                text-shadow: 3px 1px 3px rgb(206, 206, 16);
+                text-decoration:underline;
+                text-decoration-color: rgb(5, 247, 158);
+                text-decoration-style:wavy;
+                margin-top: -7px;
+                margin-bottom: 7px;
+            }
+             #opt{
+                border:3px solid yellow;
+                color:blue;
+                font-size: 17px;
+            }
+            #deliver{
+                color: aliceblue;
+                margin-right: 75px;
+                margin-left: 0px;
+            }
+            [class]{
+            color: rgb(0, 252, 25);
+            }
+            [class=colorred]{
+                color:red ;
+            }
+            div [class=colorblue]{
+                color: rgb(255, 0, 93);
+            }
+            textarea{
+                border: 3px solid rgb(224, 165, 87);
+            }
+            div > p{
+                color: blanchedalmond;
+            }
+            div + p{
+                color: blanchedalmond;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="order"> 
+            <form action="" method="post">
+                <h1 id="topic"><marquee behavior="alternate" direction="right" scrollamount="5"> Food order form</marquee></h1>
+                <div>
+                    <p>Entre your order in your form below and we will prepare its as fast as can. For more information on the ingrediant we use. call us at +5555444</p><br>
+                    <hr><br>
+                    <h3>Your Food Order</h3>
+                    <label for=""> Place each order type seperately</label><br><br>
+                    <hr>
+                    <label for="" class="arun"> What would you like?</label><br>
+                    <input type="radio" name="type">
+                    <lable>Entree</lable>
+                    <input type="radio" name="type">
+                    <lable>Entree+side</lable>
+                    <input type="radio" name="type">
+                    <lable>Combo</lable><br><br>
+                    <label for="">Quantity:</label>
+                    <input type="number" name="" id="number"><br><br>
+                    <label for="">Diet type:</label>
+                    <select name="" id="">  
+                        <option value="" id="opt">regular</option>
+                        <option value="">sweetless</option>
+                        <option value="">hot</option>
+                        <option value="">normal</option>   
+                     </select><br><br>
+                     <input type="text" placeholder="Add more"><br><br>
+                     <label for="">Do you want it delivered to you or you will pick it up?</label><br><br>
+                     <input type="radio" name="picks" id="" name="pick">
+                     <label for="" id="deliver">Deliver</label>
+                     <input type="radio" name="picks" id="" name="pick">
+                     <label for="">Pick up</label><br><br>
+                     <label class="1">Phone:</label>
+                     <input type="text" name="" id="" placeholder="mobile number">
+                     <label for="" class="colorred">Email:</label>
+                     <input type="text" name="" id="" placeholder="Enter mail"><br><br>
+                     <div>
+                     <label class="colorblue"> Special Instruction: </label><br>
+                     <textarea placeholder="say something" rows="3" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <ul>
+                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                            <li><p>Lorem ipsum dolor sit amet.</p></li>
+                        </ul>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
